@@ -1,0 +1,42 @@
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+  .navbar-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .img-logo{
+        height: 100%;
+    }
+
+    .text-logo{
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+
+        .text-logo-D{
+            color: red;
+        }
+
+        .text-logo-R{
+            color: blue;
+        }
+    }
+  }
+
+  .navbar-like{
+    font-size: 20px;
+    color: #ff0033;
+    font-weight: bolder;
+    padding: 10px 20px;
+
+    .text-like{
+      margin-left: 15px;
+    }
+  }
+}
+

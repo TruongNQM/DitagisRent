@@ -1,0 +1,92 @@
+.post-slide{
+  .slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: 1000px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1);
+  }
+}
+
+
+.post-content{
+  margin-top: 50px;
+  padding: 0 100px;
+  color: #555;
+
+  .brief-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .info{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1{
+        font-size: 40px;
+      }
+
+      p{
+        font-size: 18px;
+      }
+    }
+
+    .info-price{
+      font-size: 50px;
+    }
+  }
+
+  .specific-information{
+    margin-top: 50px;
+
+    h2{
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+}
