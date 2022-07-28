@@ -1,0 +1,167 @@
+.header{
+  width: 100%;
+  height: 630px;
+  position: relative;
+  padding: 0px 70px;
+
+  .header-title{
+    margin-top: 160px;
+    font-size: 95px;
+    color: #fff;
+    position: absolute;
+  }
+
+  .header-search{
+    position: absolute;
+    margin-top: 450px;
+    display: flex;
+    align-items: center;
+    background: #dc143c42;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 15px;
+
+    .header-search-province,.header-search-area{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #fff;
+      font-size: 23px;
+
+      input{
+        width: 355px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+    }
+
+    .header-search-province{
+      position: relative;
+
+      .province{
+        display: flex;
+        align-items: center;
+        input{
+          position: relative;
+        }
+
+        .icon{
+          position: absolute;
+          right: 15px;
+          color: #555;
+          cursor: pointer;
+        }
+      }
+
+      .choose-province{
+        position: absolute;
+        max-height: 200px;
+        min-height: 20px;
+        background: #fff;
+        color: #555;
+        top: 90px;
+        width: 355px;
+        border-radius: 10px;
+        // overflow-y:scroll;
+        -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+
+        ul{
+          li{
+            list-style: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 14px;
+          }
+
+          li:hover{
+            background: rgba(168, 168, 168, 0.342);
+          }
+
+          li:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .header-search-area{
+      position: relative;
+
+      position: relative;
+
+      .area{
+        display: flex;
+        align-items: center;
+        input{
+          position: relative;
+        }
+
+        .icon{
+          position: absolute;
+          right: 15px;
+          color: #555;
+          cursor: pointer;
+        }
+      }
+
+      .choose-province{
+        position: absolute;
+        max-height: 200px;
+        min-height: 20px;
+        background: #fff;
+        color: #555;
+        top: 90px;
+        width: 355px;
+        border-radius: 10px;
+        // overflow-y:scroll;
+        -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+        box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+
+        ul{
+          li{
+            list-style: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 14px;
+          }
+
+          li:hover{
+            background: rgba(168, 168, 168, 0.342);
+          }
+
+          li:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  
+    .btn-search{
+      color: #fff;
+      font-size: 22px;
+      border: none;
+      outline: none;
+      padding: 28px;
+      border-radius: 35px;
+      margin-left: 155px;
+      cursor: pointer;
+      background: rgb(56 39 74);
+    }
+
+    
+  }
+
+  img{
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
